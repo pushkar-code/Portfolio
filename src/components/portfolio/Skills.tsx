@@ -4,17 +4,17 @@ const groups = [
   {
     title: "Languages",
     icon: Code2,
-    items: ["JavaScript", "TypeScript", "Python", "Java", "C++", "SQL"],
+    items: ["JavaScript", "Python", "Java", "C", "SQL","HTML","CSS"],
   },
   {
     title: "Frameworks & Libraries",
     icon: Layers,
-    items: ["React", "Node.js", "Express", "Next.js", "TailwindCSS", "FastAPI"],
+    items: ["React", "Node.js", "Express", "TailwindCSS", "Bootstrap","Flask"],
   },
   {
     title: "Tools & Platforms",
     icon: Wrench,
-    items: ["Git", "Docker", "PostgreSQL", "MongoDB", "AWS", "Vite"],
+    items: ["Git", "Github", "PostgreSQL", "MongoDB", "Vite"],
   },
 ];
 
