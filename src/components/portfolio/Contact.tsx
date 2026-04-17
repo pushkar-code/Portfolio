@@ -6,9 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 const socials = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/pushkar-code", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/pushkar-c-0b8b7733a/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:pushkar108968a@gmail.com", label: "Email" },
 ];
 
 export function Contact() {
@@ -36,7 +36,7 @@ export function Contact() {
           Let's build <span className="text-gradient-mint">something together</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          Have an idea, a question, or just want to say hi? Drop a message — I read every one.
+          Have an idea, a question, or just want to say hi? Drop a message.
         </p>
       </div>
 

@@ -3,25 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "DevBoard",
+    title: "Placement Portal",
     description:
-      "A real-time collaborative kanban board with optimistic updates, dark mode, and keyboard-first UX.",
-    tags: ["React", "TypeScript", "WebSockets", "Postgres"],
+      "Simplifying campus placements by connecting students, recruiters, and opportunities in one place.",
+    tags: ["Jinja", "Flask", "REST Api", "Sqlite","Bootstrap"],
     accent: "from-primary/30 to-primary-glow/10",
-  },
-  {
-    title: "Pulse Analytics",
-    description:
-      "Lightweight analytics dashboard that ingests events through a streaming pipeline and renders interactive charts.",
-    tags: ["Next.js", "Node.js", "Redis", "D3"],
-    accent: "from-primary-glow/30 to-primary/10",
-  },
-  {
-    title: "AlgoTrail",
-    description:
-      "An algorithm visualizer for sorting, pathfinding, and graph traversal — built to make hard concepts feel intuitive.",
-    tags: ["React", "Canvas", "Algorithms"],
-    accent: "from-primary/25 to-transparent",
   },
 ];
 
@@ -76,19 +62,7 @@ export function Projects() {
                   </li>
                 ))}
               </ul>
-
               <div className="mt-5 flex gap-2">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-primary/40 bg-transparent text-primary hover:bg-primary/10 hover:text-primary"
-                  asChild
-                >
-                  <a href="#" aria-label={`View ${project.title} live`}>
-                    <ExternalLink className="h-4 w-4" />
-                    Live
-                  </a>
-                </Button>
                 <Button size="sm" variant="ghost" className="text-muted-foreground hover:text-primary" asChild>
                   <a href="#" aria-label={`View ${project.title} source code`}>
                     <Github className="h-4 w-4" />
