@@ -63,7 +63,7 @@ export function Projects() {
                 ))}
               </ul>
               <div className="mt-5 flex gap-2">
-                <Button size="sm" variant="ghost" className="text-muted-foreground hover:text-primary" asChild>
+                <Button size="sm" variant="ghost" className="text-muted-foreground hover:bg-transparent hover:text-primary" asChild>
                   <a href="#" aria-label={`View ${project.title} source code`}>
                     <Github className="h-4 w-4" />
                     Code

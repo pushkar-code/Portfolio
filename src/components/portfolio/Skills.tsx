@@ -1,20 +1,42 @@
 import { Code2, Wrench, Layers } from "lucide-react";
+import * as Si from "react-icons/si";
 
 const groups = [
   {
     title: "Languages",
     icon: Code2,
-    items: ["JavaScript", "Python", "Java", "C", "SQL","HTML","CSS"],
+    items: [
+      { name: "JavaScript", icon: Si.SiJavascript },
+      { name: "Python", icon: Si.SiPython },
+      { name: "Java", icon: Si.SiOpenjdk },
+      { name: "C", icon: Si.SiCplusplus },
+      { name: "SQL", icon: Si.SiMysql },
+      { name: "HTML", icon: Si.SiHtml5 },
+      { name: "CSS", icon: Si.SiCss },
+    ],
   },
   {
     title: "Frameworks & Libraries",
     icon: Layers,
-    items: ["React", "Node.js", "Express", "TailwindCSS", "Bootstrap","Flask"],
+    items: [
+      { name: "React", icon: Si.SiReact },
+      { name: "Node.js", icon: Si.SiNodedotjs },
+      { name: "Express", icon: Si.SiExpress },
+      { name: "TailwindCSS", icon: Si.SiTailwindcss },
+      { name: "Bootstrap", icon: Si.SiBootstrap },
+      { name: "Flask", icon: Si.SiFlask },
+    ],
   },
   {
     title: "Tools & Platforms",
     icon: Wrench,
-    items: ["Git", "Github", "PostgreSQL", "MongoDB", "Vite"],
+    items: [
+      { name: "Git", icon: Si.SiGit },
+      { name: "Github", icon: Si.SiGithub },
+      { name: "PostgreSQL", icon: Si.SiPostgresql },
+      { name: "MongoDB", icon: Si.SiMongodb },
+      { name: "Vite", icon: Si.SiVite },
+    ],
   },
 ];
 
@@ -48,10 +70,11 @@ export function Skills() {
             <ul className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <li
-                  key={item}
-                  className="rounded-full border border-border/60 bg-background/40 px-3 py-1 text-sm text-foreground/90 transition-colors hover:border-primary/60 hover:text-primary"
+                  key={item.name}
+                  className="flex items-center rounded-full border border-border/60 bg-background/40 px-3 py-1 text-sm text-foreground/90 transition-colors hover:border-primary/60 hover:text-primary"
                 >
-                  {item}
+                  {item.icon && <item.icon className="mr-1.5 h-3.5 w-3.5" />}
+                  {item.name}
                 </li>
               ))}
             </ul>

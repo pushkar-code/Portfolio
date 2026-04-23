@@ -14,16 +14,48 @@ const socials = [
 export function Contact() {
   const [submitting, setSubmitting] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
-      toast.success("Message sent!", {
-        description: "Thanks for reaching out — I'll get back to you soon.",
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      access_key: "2859a4b4-063f-4017-ac4d-3244805b0627",
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      console.log("Sending data:", data);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
       });
-    }, 700);
+
+      const result = await response.json();
+      console.log("API Response:", result);
+
+      if (response.ok) {
+        (e.target as HTMLFormElement).reset();
+        toast.success("Message sent!", {
+          description: "Thanks for reaching out — I'll get back to you soon.",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error: any) {
+      console.error("Submission error:", error);
+      toast.error("Something went wrong", {
+        description: error.message || "Your message couldn't be sent. Please try again later.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
