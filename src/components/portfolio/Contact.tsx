@@ -120,7 +120,7 @@ export function Contact() {
           type="submit"
           size="lg"
           disabled={submitting}
-          className="mt-6 w-full bg-primary text-primary-foreground shadow-glow hover:bg-primary-glow sm:w-auto"
+          className="mt-6 w-full bg-primary text-primary-foreground shadow-glow hover:bg-primary-glow sm:w-auto cursor-pointer"
         >
           <Send />
           {submitting ? "Sending..." : "Send message"}

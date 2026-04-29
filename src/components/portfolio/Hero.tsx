@@ -42,7 +42,7 @@ export function Hero() {
             Welcome to my portfolio
           </p>
           <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl">
-            Hey, I am{" "}
+            Hi, I am{" "}
             <span className="text-gradient-mint">Pushkar</span>
           </h1>
           <p className="mt-4 font-display text-2xl font-semibold text-foreground/90 sm:text-3xl md:text-4xl">
@@ -61,7 +61,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row md:justify-start">
             <Button
               size="lg"
-              className="group bg-primary text-primary-foreground shadow-glow hover:bg-primary-glow"
+              className="group bg-primary text-primary-foreground shadow-glow hover:bg-primary-glow cursor-pointer"
               onClick={() => scrollTo("projects")}
             >
               View Projects
@@ -70,7 +70,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary/40 bg-transparent text-primary hover:bg-primary/10 hover:text-primary"
+              className="border-primary/40 bg-transparent text-primary hover:bg-primary/10 hover:text-primary cursor-pointer"
               onClick={() => scrollTo("contact")}
             >
               <Mail />

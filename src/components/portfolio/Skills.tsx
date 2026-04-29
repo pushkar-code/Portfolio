@@ -25,7 +25,6 @@ const groups = [
     items: [
       { name: "React", icon: Si.SiReact },
       { name: "Node.js", icon: Si.SiNodedotjs },
-      { name: "Express", icon: Si.SiExpress },
       { name: "TailwindCSS", icon: Si.SiTailwindcss },
       { name: "Bootstrap", icon: Si.SiBootstrap },
       { name: "Flask", icon: Si.SiFlask },
@@ -40,6 +39,7 @@ const groups = [
       { name: "SQLite", icon: Si.SiSqlite },
       { name: "MongoDB", icon: Si.SiMongodb },
       { name: "Vite", icon: Si.SiVite },
+      {name: "MySQL",icon: Si.SiMysql},
     ],
   },
 ];
@@ -54,9 +54,6 @@ export function Skills() {
         <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">
           Tools I <span className="text-gradient-mint">work with</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          A snapshot of the technologies I use to build, ship, and learn.
-        </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-3">

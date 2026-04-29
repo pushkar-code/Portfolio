@@ -22,7 +22,7 @@ export function Navbar() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 glass border-b border-border/50">
+    <header className="sticky top-0 z-50 glass border-b border-border/50">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a
           href="#home"
@@ -30,7 +30,7 @@ export function Navbar() {
           className="flex items-center gap-2 text-2xl font-bold font-display"
           aria-label="Pushkar — home"
         >
-          <span className="text-gradient-mint">P.</span>
+          <span className="text-gradient-mint">Pushkar C</span>
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

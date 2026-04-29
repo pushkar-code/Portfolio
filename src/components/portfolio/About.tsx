@@ -3,7 +3,7 @@ import { MapPin, Sparkles, Rocket, GraduationCap } from "lucide-react";
 
 const facts = [
   { icon: MapPin, label: "Based in", value: "India" },
-  { icon: Sparkles, label: "Focus", value: "Full-stack, & Problem Solving" },
+  { icon: Sparkles, label: "Focus", value: "Full-stack & Problem Solving" },
   { icon: GraduationCap, label: "Currently learning", value: "DSA & Data Science" },
   { icon: Rocket, label: "Open to", value: "Internships & Collaborations" },
 ];

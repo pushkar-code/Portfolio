@@ -21,9 +21,6 @@ export function Projects() {
         <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">
           Things I've <span className="text-gradient-mint">built</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          A few selected projects that capture how I think and what I love working on.
-        </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
